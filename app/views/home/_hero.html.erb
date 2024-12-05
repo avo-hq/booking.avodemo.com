@@ -1,0 +1,27 @@
+<div class="relative h-[320px] w-full mt-12">
+  <div class="absolute inset-0">
+    <%= image_tag "hero.webp", class: "w-full h-full object-cover" %>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/60"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+    <div class="flex flex-col justify-center h-full text-white">
+      <h1 class="text-2xl lg:text-4xl font-bold max-w-2xl leading-tight">
+        Find your next vacation destination
+      </h1>
+      
+      <p class="mt-2 text-lg md:text-xl text-gray-200 max-w-xl">
+        Find unique experiences around the globe with our curated list of destinations. Your next stay should be an Avo Stay!
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-2">
+        <span class="text-sm">Popular:</span>
+        <% ["Bali", "Paris", "Tokyo", "New York", "London"].each do |city| %>
+          <button class="px-4 py-1 bg-white/20 hover:bg-white/30 rounded-full text-xs backdrop-blur-sm transition">
+            <%= city %>
+          </button>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
