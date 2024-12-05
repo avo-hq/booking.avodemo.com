@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room: one
+  user: one
+  booked_at: 2024-12-05 03:07:17
+  booked_for: 1
+
+two:
+  room: two
+  user: two
+  booked_at: 2024-12-05 03:07:17
+  booked_for: 1
