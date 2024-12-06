@@ -10,6 +10,7 @@ class Avo::Resources::Room < Avo::BaseResource
             main_app.url_for(record.photo.url)
           end,
         title: record.name,
+        body: record.description.truncate(50),
       }
     end
   }
