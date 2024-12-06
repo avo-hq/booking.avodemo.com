@@ -23,4 +23,8 @@ class Avo::Resources::Booking < Avo::BaseResource
   def filters
     filter Avo::Filters::FutureBookings
   end
+
+  def actions
+    action Avo::Actions::DelayBooking
+  end
 end
