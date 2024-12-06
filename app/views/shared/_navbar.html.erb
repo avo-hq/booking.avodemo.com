@@ -1,4 +1,4 @@
-<nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+<nav class="bg-white shadow-lg w-full z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
       <div class="flex-shrink-0 flex items-center">
@@ -6,7 +6,7 @@
           <%= image_tag "isologo.svg", class: "h-8 w-32" %>
         <% end %>
       </div>
-      
+
       <div class="hidden sm:flex sm:items-center sm:space-x-3">
         <% if user_signed_in? %>
           <%= button_to "Sign out", 
@@ -16,7 +16,6 @@
           %>
         <% else %>
           <%= link_to "Sign In", new_user_session_path, class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" %>
-          <%= link_to "Sign Up", new_user_registration_path, class: "bg-rose-500 text-white hover:bg-rose-600 px-4 py-2 rounded-lg text-sm font-medium" %>
         <% end %>
       </div>
       <div class="flex items-center sm:hidden">
