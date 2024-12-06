@@ -139,13 +139,13 @@ locations = [
   },
   {
     name: "City Gate",
-    description: "City Gate is a high-end office building located in the North of Bucharest.",
+    description: "City Gate is an A-class modern office building with an exquisite location in the North of Bucharest. Located in a quiet and peaceful neighborhood, it combines the natural atmosphere of Herastrau Park with the urban lifestyle. City Gate is an 18-storey building, with two independent towers, offering 47 843 m2 of leasable area. Located in Presei Libere Square, the first square entering in Bucharest coming from the airport, the towers act as a gateway to the city.",
     photo_path: "city-gate-romania.jpg",
     slug: "city-gate",
   },
   {
     name: "Timpuri Noi Square",
-    description: "Timpuri Noi Square is a dynamic new urban pole, one of the main 5 crossing Bucharest Center, providing working, leisure and living functions.",
+    description: "Timpuri Noi Square is designed as a dynamic urban project, with friendly environment and unique identity. One of 5 key urban districts, crossing Bucharest City Center, Timpuri Noi Square provides working, leisure and living functions, integrated into a mixed-use environment – modern, class A office complex, retail spaces & plaza, green areas and residential community. LEED PLATINUM certification has been awarded to all three buildings within the project, with the first two buildings certified in 2018, and the third one in 2020. The office development has been designed in a distinctive way, with a particular accent on green solutions & energy efficiency, emphasizing quality through modern simplicity and natural stone.",
     photo_path: "timpuri-noi-square.jpg",
     slug: "timpuri-noi-square",
   }
