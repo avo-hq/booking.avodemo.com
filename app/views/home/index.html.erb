@@ -1,5 +1,14 @@
 <%= render "hero" %>
 
 <div class="max-w-screen-xl mx-auto px-10 pt-8 pb-20">
-  <h3>Hola</h3>
+  <h2 class="text-lg font-semibold mb-4">
+    Our latest additions
+  </h2>
+  <div class="grid grid-cols-12 gap-x-4 gap-y-6">
+    <% @locations.each do |location| %>
+      <div class="col-span-12 md:col-span-6 lg:col-span-4">
+        <%= render location %>
+      </div>
+    <% end %>
+  </div>
 </div>
