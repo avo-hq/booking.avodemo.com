@@ -1,7 +1,7 @@
 class Avo::Dashboards::Dashy < Avo::Dashboards::BaseDashboard
   self.id = "dashy"
   self.name = "Dashy"
-  self.description = "Main metrics dsahboard"
+  self.description = "Main metrics dashboard"
   # self.grid_cols = 3
   # self.visible = -> do
   #   true
@@ -10,5 +10,6 @@ class Avo::Dashboards::Dashy < Avo::Dashboards::BaseDashboard
   def cards
     card Avo::Cards::BookingsCount
     card Avo::Cards::BookedHours
+    card Avo::Cards::BookingsOverTime
   end
 end
