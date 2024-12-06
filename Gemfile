@@ -61,6 +61,7 @@ end
 gem "avo", ">= 3.2.1"
 gem "avo-advanced", ">= 3.2.0", source: "https://packager.dev/avo-hq/"
 
+gem "chartkick"
 gem "devise", "~> 4.9"
 gem "friendly_id", "~> 5.5.0"
 gem "inline_svg"
