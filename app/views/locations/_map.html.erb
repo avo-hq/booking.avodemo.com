@@ -1,0 +1,13 @@
+<section class="mt-6">
+  <h2 class="text-lg font-semibold text-gray-900 mb-2">Where it's located</h2>
+  <div id="map" class="w-full h-72 rounded-xl border border-gray-200"></div>
+</section>
+
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZXJvemFzIiwiYSI6ImNsaTliaXBqMzBkeGwzZm51Zmh6dmVsN2gifQ.KANPmPLBiC3CIyCOnPhCnw';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        center: [26.1171142, 44.4147689],
+        zoom: 13 // starting zoom
+    });
+</script>
