@@ -3,6 +3,18 @@ class Avo::Resources::Location < Avo::BaseResource
   self.includes = []
   self.default_view_type = :grid
 
+  self.find_record_method = -> {
+    if id.is_a?(Array)
+      query.where(slug: id)
+    else
+      query.friendly.find(id)
+    end
+  }
+
+  self.search = {
+    query: -> { query.ransack(id_eq: params[:q], name_cont: params[:q], description_cont: params[:q], m: "or").result(distinct: false) }
+  }
+
   self.grid_view = {
     card: -> do
       {

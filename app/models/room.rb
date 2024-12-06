@@ -20,9 +20,18 @@
 #  location_id  (location_id => locations.id)
 #
 class Room < ApplicationRecord
+  has_one_attached :photo
   belongs_to :location
-  has_one_attached :photo  
+  has_many :bookings
 
   extend FriendlyId
   friendly_id :name, use: :slugged
+
+  def self.ransackable_attributes(auth_object = nil)
+    ["name", "description"]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    ["location"]
+  end
 end
