@@ -23,4 +23,6 @@
 class Booking < ApplicationRecord
   belongs_to :room
   belongs_to :user
+
+  scope :in_the_future, -> { where("booked_at > ?", Time.current) }
 end
