@@ -1,0 +1,33 @@
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="mb-6">
+    <h1 class="text-2xl font-bold text-gray-900"><%= @location.name %></h1>
+  </div>
+
+  <div class="grid grid-cols-12 gap-x-2 rounded-2xl overflow-hidden">
+    <div class="col-span-8 overflow-hidden">
+      <%= image_tag url_for(@location.photo), class: "w-full h-full object-cover" %>
+    </div>
+    <div class="col-span-4 space-y-2">
+      <%= image_tag "locations/sky-tower-2.jpg", class: "w-full h-1/2 object-cover" %>
+      <%= image_tag "locations/sky-tower-3.jpg", class: "w-full h-1/2 object-cover" %>
+    </div>
+  </div>
+
+  <%# Location Details %>
+  <div class="mt-8 grid grid-cols-12 gap-8">
+    <%# Left column - Description %>
+    <div class="col-span-8 space-y-6">
+      <div>
+        <h2 class="text-2xl font-semibold text-gray-900">About this location</h2>
+        <p class="mt-4 text-gray-600"><%= @location.description %></p>
+      </div>
+    </div>
+
+    <div class="col-span-4">
+      <div class="sticky top-8 bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Location Details</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

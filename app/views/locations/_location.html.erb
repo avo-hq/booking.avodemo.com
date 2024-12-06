@@ -22,7 +22,7 @@
 
   <div class="px-3 py-4">
     <h3 class="text-base font-semibold text-gray-900 mb-1">
-      <%= location.name %>
+      <%= link_to location.name, location_path(location) %>
     </h3>
     <p class="text-zinc-600 text-sm line-clamp-2 mb-4">
       <%= location.description %>
