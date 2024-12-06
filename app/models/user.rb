@@ -27,4 +27,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   extend FriendlyId
   friendly_id :full_name, use: :slugged
+
+  def self.ransackable_attributes(auth_object = nil)
+    ["full_name", "email", "username"]
+  end
 end
