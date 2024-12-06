@@ -6,13 +6,7 @@
           <%= image_tag "isologo.svg", class: "h-8 w-32" %>
         <% end %>
       </div>
-      <div class="hidden sm:flex sm:space-x-8 items-center">
-        <%= link_to "Destinations", "#", class: "text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium" %>
-        <%= link_to "Vacation Packages", "#", class: "text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium" %>
-        <%= link_to "Deals", "#", class: "text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium" %>
-        <%= link_to "About Us", "#", class: "text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium" %>
-      </div>
-
+      
       <div class="hidden sm:flex sm:items-center sm:space-x-3">
         <% if user_signed_in? %>
           <%= button_to "Sign out", 
