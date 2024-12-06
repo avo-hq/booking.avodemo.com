@@ -1,8 +1,8 @@
 <%= render "hero" %>
 
-<div class="max-w-screen-xl mx-auto px-4 lg:px-6 pt-8 pb-20">
+<section class="max-w-screen-xl mx-auto px-4 lg:px-6 pt-4 pb-10"
   <h2 class="text-lg font-semibold mb-4">
-    Our latest additions
+    Our latest additions-8
   </h2>
   <div class="grid grid-cols-12 gap-x-4 gap-y-6">
     <% @locations.each do |location| %>
@@ -11,4 +11,6 @@
       </div>
     <% end %>
   </div>
-</div>
+</section>
+
+<%= render "built_with_avo" %>
