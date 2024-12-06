@@ -24,7 +24,14 @@ class Avo::Resources::Room < Avo::BaseResource
   }
 
   self.search = {
-    query: -> { query.ransack(id_eq: params[:q], name_cont: params[:q], m: "or").result(distinct: false) }
+    query: -> { query.ransack(id_eq: params[:q], name_cont: params[:q], m: "or").result(distinct: false) },
+    item: -> do
+      {
+        title: record.name,
+        description: record.description.truncate(72),
+        image_url: record.photo.attached? ? main_app.url_for(record.photo.url) : nil
+      }
+    end
   }
 
   def fields
