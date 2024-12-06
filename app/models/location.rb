@@ -27,4 +27,12 @@ class Location < ApplicationRecord
   def self.ransackable_associations(auth_object = nil)
     ["rooms"]
   end
+
+  def address
+    "Calea Floreasca 246C, București 014476, Romania"
+  end
+
+  def phone_number
+    "+40 740 123 456"
+  end
 end
