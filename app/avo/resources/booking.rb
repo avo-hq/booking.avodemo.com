@@ -4,7 +4,7 @@ class Avo::Resources::Booking < Avo::BaseResource
 
   def fields
     field :id, as: :id
-    field :user, as: :belongs_to
+    field :user, as: :belongs_to, default: -> { Avo::Current.user.id }
     field :room, as: :belongs_to
     field :booked_at, as: :date_time
     field :booked_for, as: :select, options: {
