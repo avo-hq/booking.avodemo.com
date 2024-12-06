@@ -2,6 +2,11 @@ class Avo::Resources::Booking < Avo::BaseResource
   self.title = :id
   self.includes = []
 
+  self.search = {
+    query: -> { query.ransack(id_eq: params[:q], m: "or").result(distinct: false) },
+    hide_on_global: true,
+  }
+
   def fields
     field :id, as: :id
     field :user, as: :belongs_to, default: -> { Avo::Current.user.id }
