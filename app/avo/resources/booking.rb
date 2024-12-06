@@ -14,4 +14,8 @@ class Avo::Resources::Booking < Avo::BaseResource
       '8 hours' => 8,
     }
   end
+
+  def filters
+    filter Avo::Filters::FutureBookings
+  end
 end
