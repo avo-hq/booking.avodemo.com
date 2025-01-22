@@ -9,32 +9,23 @@
 
       <div class="hidden sm:flex sm:items-center sm:space-x-3">
         <% if user_signed_in? %>
+          <%= link_to "Admin panel", new_user_session_path, class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" %>
           <%= button_to "Sign out", 
               destroy_user_session_path, 
               method: :delete, 
               class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" 
           %>
         <% else %>
-          <%= link_to "Sign In", new_user_session_path, class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" %>
+          <%= link_to "Admin panel", avo_path, class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" %>
         <% end %>
       </div>
       <div class="flex items-center sm:hidden">
         <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </button>
+          </svg>
+        </button>
       </div>
-    </div>
-  </div>
-
-  <div class="hidden mobile-menu sm:hidden">
-    <div class="px-2 pt-2 pb-3 space-y-1">
-      <%= link_to "Destinations", "#", class: "block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium" %>
-      <%= link_to "Vacation Packages", "#", class: "block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium" %>
-      <%= link_to "Deals", "#", class: "block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium" %>
-      <%= link_to "About Us", "#", class: "block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium" %>
-      <%= link_to "Sign In", "#", class: "block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium" %>
-      <%= link_to "Sign Up", "#", class: "block px-3 py-2 text-gray-700 hover:text-blue-600 text-base font-medium" %>
     </div>
   </div>
 </nav>
