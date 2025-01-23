@@ -1,29 +1,29 @@
 GEM
   remote: https://packager.dev/avo-hq/
   specs:
-    avo-advanced (3.16.1)
-      avo (= 3.16.1)
-      avo-dynamic_filters (= 3.16.1)
-      avo-pro (= 3.16.1)
+    avo-advanced (3.16.2)
+      avo (= 3.16.2)
+      avo-dynamic_filters (= 3.16.2)
+      avo-pro (= 3.16.2)
       zeitwerk (>= 2.6.12)
-    avo-dashboards (3.16.1)
-      avo (= 3.16.1)
+    avo-dashboards (3.16.2)
+      avo (= 3.16.2)
       turbo-rails
       view_component (>= 3.7.0)
       zeitwerk (>= 2.6.12)
-    avo-dynamic_filters (3.16.1)
-      avo (= 3.16.1)
+    avo-dynamic_filters (3.16.2)
+      avo (= 3.16.2)
       ransack (>= 4.2.0)
       view_component (>= 3.7.0)
       zeitwerk (>= 2.6.12)
-    avo-menu (3.16.1)
-      avo (= 3.16.1)
+    avo-menu (3.16.2)
+      avo (= 3.16.2)
       docile
       zeitwerk (>= 2.6.12)
-    avo-pro (3.16.1)
-      avo (= 3.16.1)
-      avo-dashboards (= 3.16.1)
-      avo-menu (= 3.16.1)
+    avo-pro (3.16.2)
+      avo (= 3.16.2)
+      avo-dashboards (= 3.16.2)
+      avo-menu (= 3.16.2)
       zeitwerk (>= 2.6.12)
 
 GEM
@@ -107,7 +107,7 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     annotaterb (4.13.0)
     ast (2.4.2)
-    avo (3.16.1)
+    avo (3.16.2)
       actionview (>= 6.1)
       active_link_to
       activerecord (>= 6.1)
@@ -195,7 +195,8 @@ GEM
       activesupport (>= 3.0)
       nokogiri (>= 1.6)
     io-console (0.8.0)
-    irb (1.14.3)
+    irb (1.15.1)
+      pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.13.0)
@@ -274,6 +275,9 @@ GEM
     parser (3.3.6.0)
       ast (~> 2.4.1)
       racc
+    pp (0.6.2)
+      prettyprint
+    prettyprint (0.2.0)
     prop_initializer (0.2.0)
       zeitwerk (>= 2.6.18)
     propshaft (1.1.0)
