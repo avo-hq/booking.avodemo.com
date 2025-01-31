@@ -106,7 +106,7 @@ Avo.configure do |config|
 
   ## == Customization ==
   config.click_row_to_view_record = true
-  # config.app_name = 'Avocadelicious'
+  config.app_name = 'avowork'
   # config.timezone = 'UTC'
   # config.currency = 'USD'
   # config.hide_layout_when_printing = false
@@ -124,7 +124,7 @@ Avo.configure do |config|
   ## == Branding ==
   config.branding = {
     logo: "/logo.svg",
-    logomark: "/isologo.svg",
+    logomark: "/isologo.png",
     favicon: "/favicon.ico"
   }
 
