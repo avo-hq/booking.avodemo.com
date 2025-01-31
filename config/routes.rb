@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
   resources :locations, only: [:show]
 
+  get "/home", to: "home#index"
+
   # Defines the root path route ("/")
-  root "home#index"
+  root to: redirect('/avo/dashboards/dashy')
 end

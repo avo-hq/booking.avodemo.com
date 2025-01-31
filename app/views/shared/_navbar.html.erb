@@ -3,19 +3,20 @@
     <div class="flex justify-between h-16">
       <div class="flex-shrink-0 flex items-center">
         <%= link_to root_path, class: "flex items-center" do %>
-          <%= image_tag "isologo.svg", class: "h-8 w-32" %>
+          <%= image_tag "isologo.png", class: "h-7" %>
         <% end %>
       </div>
 
       <div class="hidden sm:flex sm:items-center sm:space-x-3">
         <% if user_signed_in? %>
-          <%= link_to "Admin panel", new_user_session_path, class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" %>
+          <%= link_to "Admin panel", avo_path, class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" %>
           <%= button_to "Sign out", 
               destroy_user_session_path, 
               method: :delete, 
               class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" 
           %>
         <% else %>
+          <%= link_to "Home", home_path, class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" %>
           <%= link_to "Admin panel", avo_path, class: "text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium" %>
         <% end %>
       </div>
