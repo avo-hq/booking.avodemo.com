@@ -123,7 +123,7 @@ Avo.configure do |config|
 
   ## == Branding ==
   config.branding = {
-    logo: "/logo.svg",
+    logo: "/logo.png",
     logomark: "/isologo.png",
     favicon: "/favicon.ico"
   }
