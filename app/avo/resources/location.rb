@@ -17,7 +17,7 @@ class Avo::Resources::Location < Avo::BaseResource
       {
         title: record.name,
         description: record.description.truncate(72),
-        image_url: record.photo.attached? ? main_app.url_for(record.photo.url) : nil
+        image_url: record.photo.attached? ? main_app.url_for(record.photo) : nil
       }
     end
   }
@@ -27,7 +27,7 @@ class Avo::Resources::Location < Avo::BaseResource
       {
         cover_url:
           if record.photo.attached?
-            main_app.url_for(record.photo.url)
+            main_app.url_for(record.photo)
           end,
         title: record.name,
         body: record.description.truncate(50),
