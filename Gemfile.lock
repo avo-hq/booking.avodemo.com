@@ -1,29 +1,29 @@
 GEM
   remote: https://packager.dev/avo-hq/
   specs:
-    avo-advanced (3.19.3)
-      avo (= 3.19.3)
-      avo-dynamic_filters (= 3.19.3)
-      avo-pro (= 3.19.3)
+    avo-advanced (3.20.0)
+      avo (= 3.20.0)
+      avo-dynamic_filters (= 3.20.0)
+      avo-pro (= 3.20.0)
       zeitwerk (>= 2.6.12)
-    avo-dashboards (3.19.3)
-      avo (= 3.19.3)
+    avo-dashboards (3.20.0)
+      avo (= 3.20.0)
       turbo-rails
       view_component (>= 3.7.0)
       zeitwerk (>= 2.6.12)
-    avo-dynamic_filters (3.19.3)
-      avo (= 3.19.3)
+    avo-dynamic_filters (3.20.0)
+      avo (= 3.20.0)
       ransack (>= 4.2.0)
       view_component (>= 3.7.0)
       zeitwerk (>= 2.6.12)
-    avo-menu (3.19.3)
-      avo (= 3.19.3)
+    avo-menu (3.20.0)
+      avo (= 3.20.0)
       docile
       zeitwerk (>= 2.6.12)
-    avo-pro (3.19.3)
-      avo (= 3.19.3)
-      avo-dashboards (= 3.19.3)
-      avo-menu (= 3.19.3)
+    avo-pro (3.20.0)
+      avo (= 3.20.0)
+      avo-dashboards (= 3.20.0)
+      avo-menu (= 3.20.0)
       zeitwerk (>= 2.6.12)
 
 GEM
@@ -107,7 +107,7 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     annotaterb (4.14.0)
     ast (2.4.2)
-    avo (3.19.3)
+    avo (3.20.0)
       actionview (>= 6.1)
       active_link_to
       activerecord (>= 6.1)
@@ -293,7 +293,7 @@ GEM
     psych (5.2.4)
       date
       stringio
-    public_suffix (6.0.1)
+    public_suffix (6.0.2)
     puma (6.6.0)
       nio4r (~> 2.0)
     raabro (1.4.0)
