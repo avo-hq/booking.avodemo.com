@@ -58,11 +58,16 @@ group :test do
 end
 
 # Avo
-gem "avo", ">= 3.2.1"
-gem "avo-advanced", ">= 3.2.0", source: "https://packager.dev/avo-hq/"
+gem "avo", ">= 3.20.2"
+gem "avo-advanced", ">= 3.20.2", source: "https://packager.dev/avo-hq/"
 
 gem "chartkick"
 gem "devise", "~> 4.9"
 gem "friendly_id", "~> 5.5.0"
 gem "inline_svg"
 gem "ransack"
+gem "whenever"
+
+# Seeds
+gem 'factory_bot_rails'
+gem 'faker'
