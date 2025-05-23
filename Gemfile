@@ -66,6 +66,7 @@ gem "devise", "~> 4.9"
 gem "friendly_id", "~> 5.5.0"
 gem "inline_svg"
 gem "ransack"
+gem "mission_control-jobs"
 
 # Seeds
 gem 'factory_bot_rails'

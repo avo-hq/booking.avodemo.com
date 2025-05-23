@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  mount MissionControl::Jobs::Engine, at: "/mission-control"
 
   authenticate :user, lambda { |u| u.admin? } do
     mount_avo
