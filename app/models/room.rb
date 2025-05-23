@@ -22,7 +22,7 @@
 class Room < ApplicationRecord
   has_one_attached :photo
   belongs_to :location
-  has_many :bookings
+  has_many :bookings, dependent: :destroy
 
   extend FriendlyId
   friendly_id :name, use: :slugged

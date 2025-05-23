@@ -24,6 +24,8 @@ class Booking < ApplicationRecord
   belongs_to :room
   belongs_to :user
 
+  validates :booked_for, presence: true
+
   scope :in_the_future, -> { where("booked_at > ?", Time.current) }
 
   def self.ransackable_attributes(auth_object = nil)
